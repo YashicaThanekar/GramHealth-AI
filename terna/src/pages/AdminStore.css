@@ -1,0 +1,263 @@
+.admin-store {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.admin-store h1 {
+  color: #088dba;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filter-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-section button {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #088dba;
+  background: white;
+  color: #088dba;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(8, 141, 186, 0.2);
+}
+
+.filter-section button.active {
+  background: linear-gradient(135deg, #088dba 0%, #1ab6b3 100%);
+  color: white;
+}
+
+.orders-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.order-card.approved {
+  border-left: 4px solid #10b981;
+}
+
+.order-card.on.the.way,
+.order-card.on-the-way {
+  border-left: 4px solid #3b82f6;
+}
+
+.order-card.delivered {
+  border-left: 4px solid #22c55e;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-header h3 {
+  color: #088dba;
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.customer-email {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-badge.approved {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.on.the.way,
+.status-badge.on-the-way {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge.delivered {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.order-items {
+  margin-bottom: 1rem;
+}
+
+.order-items h4 {
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.item-name {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.item-quantity {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.item-price {
+  color: #088dba;
+  font-weight: 600;
+}
+
+.order-total {
+  padding: 1rem 0;
+  border-top: 2px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.order-total strong {
+  color: #088dba;
+  font-size: 1.1rem;
+}
+
+.order-details p {
+  margin: 0.5rem 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.order-actions {
+  margin-top: 1rem;
+}
+
+.status-select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid #088dba;
+  border-radius: 6px;
+  background: white;
+  color: #088dba;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.status-select:hover {
+  background: #f0f9ff;
+}
+
+.status-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(8, 141, 186, 0.1);
+}
+
+.no-orders {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  padding: 3rem;
+}
+
+.admin-notes-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.admin-notes-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.admin-notes-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.admin-notes-textarea:focus {
+  outline: none;
+  border-color: #088dba;
+  box-shadow: 0 0 0 3px rgba(8, 141, 186, 0.1);
+}
+
+.save-notes-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #088dba 0%, #1ab6b3 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.save-notes-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(8, 141, 186, 0.3);
+}
+
+.save-notes-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

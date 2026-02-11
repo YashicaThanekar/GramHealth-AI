@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="description" content="GramHealth – AI-powered rural healthcare assistant" />
+    <meta name="theme-color" content="#088dba" />
+    <title>GramHealth</title>
+    <!-- Preconnect to Firebase and Google services for faster loading -->
+    <link rel="preconnect" href="https://firebasestorage.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.gstatic.com">
+    <!-- Inline critical CSS to avoid blank white screen -->
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+      body{font-family:system-ui,-apple-system,sans-serif;background:#f8fafc;color:#1e293b}
+      /* Initial loader shown before JS hydrates */
+      .app-boot-loader{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;gap:1rem}
+      .app-boot-loader__ring{width:44px;height:44px;border:4px solid #e2e8f0;border-top-color:#088dba;border-radius:50%;animation:_spin .8s linear infinite}
+      .app-boot-loader__text{color:#64748b;font-size:.95rem;font-weight:500}
+      @keyframes _spin{to{transform:rotate(360deg)}}
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Visible instantly while JS loads – avoids blank white screen -->
+      <div class="app-boot-loader">
+        <div class="app-boot-loader__ring"></div>
+        <p class="app-boot-loader__text">Loading GramHealth…</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

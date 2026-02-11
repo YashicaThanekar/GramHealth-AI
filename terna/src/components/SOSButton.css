@@ -1,0 +1,66 @@
+.sos-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  left: auto !important;
+  width: 160px !important;
+  max-width: 160px !important;
+  min-width: 160px !important;
+  height: 50px !important;
+  background: #dc3545 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  z-index: 9999 !important;
+  display: inline-block !important;
+  text-align: center !important;
+  line-height: 50px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.sos-button:hover {
+  background: #c82333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sos-button:active {
+  background: #bd2130;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .sos-button {
+    width: 140px !important;
+    max-width: 140px !important;
+    min-width: 140px !important;
+    height: 50px !important;
+    font-size: 15px !important;
+    bottom: 90px !important;
+    right: 20px !important;
+    line-height: 50px !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .sos-button:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (max-width: 480px) {
+  .sos-button {
+    width: 130px !important;
+    max-width: 130px !important;
+    min-width: 130px !important;
+    height: 48px !important;
+    font-size: 14px !important;
+    bottom: 85px !important;
+    right: 15px !important;
+    line-height: 48px !important;
+  }
+}

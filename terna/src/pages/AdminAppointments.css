@@ -1,0 +1,357 @@
+/* This file has been removed as per user request. */
+/* .admin-appointments {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.admin-appointments h1 {
+  color: #088dba;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filter-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-section button {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #088dba;
+  background: white;
+  color: #088dba;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(8, 141, 186, 0.2);
+}
+
+.filter-section button.active {
+  background: linear-gradient(135deg, #088dba 0%, #1ab6b3 100%);
+  color: white;
+}
+
+.appointments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.appointment-card.pending {
+  border-left: 4px solid #f59e0b;
+}
+
+.appointment-card.confirmed {
+  border-left: 4px solid #10b981;
+}
+
+.appointment-card.rejected {
+  border-left: 4px solid #ef4444;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.appointment-header h3 {
+  color: #088dba;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-badge.confirmed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.appointment-details {
+  margin-bottom: 1rem;
+}
+
+.appointment-details p {
+  margin: 0.5rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.appointment-details strong {
+  color: #1f2937;
+}
+
+.booked-at {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.appointment-actions button {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.confirm-btn {
+  background: #10b981;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #059669;
+}
+
+.reject-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.reject-btn:hover {
+  background: #dc2626;
+}
+
+.delete-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #4b5563;
+}
+
+.no-appointments {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  padding: 3rem;
+} */
+.admin-appointments {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.admin-appointments h1 {
+  color: #088dba;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filter-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-section button {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #088dba;
+  background: white;
+  color: #088dba;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(8, 141, 186, 0.2);
+}
+
+.filter-section button.active {
+  background: linear-gradient(135deg, #088dba 0%, #1ab6b3 100%);
+  color: white;
+}
+
+.appointments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.appointment-card.pending {
+  border-left: 4px solid #f59e0b;
+}
+
+.appointment-card.confirmed {
+  border-left: 4px solid #10b981;
+}
+
+.appointment-card.rejected {
+  border-left: 4px solid #ef4444;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.appointment-header h3 {
+  color: #088dba;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-badge.confirmed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.appointment-details {
+  margin-bottom: 1rem;
+}
+
+.appointment-details p {
+  margin: 0.5rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.appointment-details strong {
+  color: #1f2937;
+}
+
+.booked-at {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.appointment-actions button {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.confirm-btn {
+  background: #10b981;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #059669;
+}
+
+.reject-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.reject-btn:hover {
+  background: #dc2626;
+}
+
+.delete-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #4b5563;
+}
+
+.no-appointments {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  padding: 3rem;
+}

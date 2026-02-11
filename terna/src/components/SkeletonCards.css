@@ -1,0 +1,111 @@
+/* ── Shimmer animation ─────────────────────────────────────────── */
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #e2e8f0 25%,
+    #f1f5f9 37%,
+    #e2e8f0 63%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* ── Wrapper ──────────────────────────────────────────────────── */
+.skeleton-wrapper {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skeleton-header {
+  width: 220px;
+  height: 28px;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Grid ─────────────────────────────────────────────────────── */
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── Card ─────────────────────────────────────────────────────── */
+.skeleton-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 56px;
+  border-radius: 0;
+}
+
+.skeleton-body {
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.skeleton-title {
+  width: 65%;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.skeleton-tag {
+  width: 40%;
+  height: 14px;
+  border-radius: 6px;
+}
+
+.skeleton-line {
+  width: 100%;
+  height: 13px;
+  border-radius: 4px;
+}
+
+.skeleton-line--short {
+  width: 75%;
+}
+
+.skeleton-btn {
+  width: 120px;
+  height: 36px;
+  border-radius: 8px;
+  margin-top: 0.4rem;
+}
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .skeleton-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skeleton-wrapper {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .skeleton-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
