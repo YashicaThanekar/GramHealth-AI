@@ -36,11 +36,24 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   // Only cache GET requests
   if (event.request.method !== 'GET') return;
-  
+
   // Skip Firebase and API calls
-  if (event.request.url.includes('firebasestorage') || 
+  if (event.request.url.includes('firebasestorage') ||
       event.request.url.includes('firestore') ||
       event.request.url.includes('googleapis')) {
+    return;
+  }
+
+  // Handle navigation requests for SPA routing
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      caches.match('/index.html').then((cachedResponse) => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+        return fetch('/index.html');
+      })
+    );
     return;
   }
 

@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { compression } from 'vite-plugin-compression2'
 
 // https://vite.dev/config/
+import { resolve } from 'path'
 export default defineConfig({
   plugins: [
     react(),
@@ -40,5 +41,13 @@ export default defineConfig({
     },
     // ── Chunk size warning threshold ──────────────────────────
     chunkSizeWarningLimit: 500,
+  },
+  server: {
+    // Enable SPA fallback so all routes serve index.html
+    historyApiFallback: true,
+  },
+  preview: {
+    // Also enable fallback for vite preview
+    historyApiFallback: true,
   },
 })
